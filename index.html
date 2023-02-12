@@ -12,8 +12,8 @@
 <body>
     <div class="container">
         <div class="sidebar">
-            <h1>Dashboard</h1>
-            <div class="options1">
+            <h1 id="dashHead">Dashboard</h1>
+            <div id="options1">
                 <ul>
                     <li class="option">Home</li>
                     <li class="option">Profile</li>
@@ -23,7 +23,7 @@
                     <li class="option">Communities</li>
                 </ul>
             </div>
-            <div class="options2">
+            <div id="options2">
                 <ul>
                     <li class="option">Settings</li>
                     <li class="option">Support</li>
@@ -33,67 +33,115 @@
         </div>
         <div class="header">
             <div id="head1">
-                <input type="text" name="search" id="search">
+                <div id="searchdiv">
+                    <img src="./media/search-web.svg" alt="" class="icon">
+                    <input type="text" name="search" id="search">
+                </div>
                 <div class="profile">
-                    <h3>Morgan Oakley</h3>
+                    <img src="./media/deadpool.jpg" alt="" id="smallpic">
+                    <h3 id="smallname">Morgan Oakley</h3>
                 </div>
             </div>
             <div id="head2">
                 <div class="profile">
-                    <img src="" alt="pic">
+                    <img src="./media/deadpool.jpg" alt="pic" id="bigpic">
                     <div class="profile-details">
-                        <p>Hi there,</p>
-                        <h3>Morgan Oakley(@morgan)</h3>
+                        <p id="vsmall">Hi there,</p>
+                        <h3 id="bigname">Morgan Oakley(@morgan)</h3>
                     </div>
                 </div>
                 <div class="actions">
-                    <button class="actions">New </button>
-                    <button class="actions">Upload</button>
-                    <button class="actions">Share</button>
+                    <button class="action">New </button>
+                    <button class="action">Upload</button>
+                    <button class="action">Share</button>
                 </div>
             </div>
         </div>
         <div class="main-content">
             <div class="projects">
-                <h1>Your Projects</h1>
+                <h1 class="proHeads">Your Projects</h1>
                 <div class="projects-container">
                     <div class="project">
-                        <h2>Project1</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, id labore quia ratione accusamus beatae quisquam repudiandae laudantium quas rerum repellendus reiciendis, consectetur nesciunt minima error in quibusdam ipsam maiores.</p>
+                        <h2 class="cardHead">Project1</h2>
+                        <p class="cardContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, id labore quia ratione accusamus beatae quisquam repudiandae laudantium quas rerum repellendus reiciendis.</p>
                         <div class="sets"></div>
                     </div>
                     <div class="project">
-                        <h2>Project2</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, id labore quia ratione accusamus beatae quisquam repudiandae laudantium quas rerum repellendus reiciendis, consectetur nesciunt minima error in quibusdam ipsam maiores.</p>
+                        <h2 class="cardHead">Project2</h2>
+                        <p class="cardContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, id labore quia ratione accusamus beatae quisquam repudiandae laudantium quas </p>
                         <div class="sets"></div>
                     </div>
                     <div class="project">
-                        <h2>Project3</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, id labore quia ratione accusamus beatae quisquam repudiandae laudantium quas rerum repellendus reiciendis, consectetur nesciunt minima error in quibusdam ipsam maiores.</p>
+                        <h2 class="cardHead">Project3</h2>
+                        <p class="cardContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, id labore quia ratione accusamus beatae quisquam repudiandae laudantium quas rerum repellendus reiciendis.</p>
                         <div class="sets"></div>
                     </div>
                     <div class="project">
-                        <h2>Project4</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, id labore quia ratione accusamus beatae quisquam repudiandae laudantium quas rerum repellendus reiciendis, consectetur nesciunt minima error in quibusdam ipsam maiores.</p>
+                        <h2 class="cardHead">Project4</h2>
+                        <p class="cardContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, id labore quia ratione accusamus beatae </p>
                         <div class="sets"></div>
                     </div>
                     <div class="project">
-                        <h2>Project5</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, id labore quia ratione accusamus beatae quisquam repudiandae laudantium quas rerum repellendus reiciendis, consectetur nesciunt minima error in quibusdam ipsam maiores.</p>
+                        <h2 class="cardHead">Project5</h2>
+                        <p class="cardContent">Lorem ipsum dolor sit ame repudiandae laudantium quas rerum repellendus reiciendis, consectetur nesciunt minima error in quibusdam ipsam maiores.</p>
                         <div class="sets"></div>
                     </div>
                     <div class="project">
-                        <h2>Project6</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, id labore quia ratione accusamus beatae quisquam repudiandae laudantium quas rerum repellendus reiciendis, consectetur nesciunt minima error in quibusdam ipsam maiores.</p>
+                        <h2 class="cardHead">Project6</h2>
+                        <p class="cardContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, id labore quia ratione accusamus beatae quisquam repudiandae laudantium quas rerum repellendus reiciendis, consectetur nesciunt minima error in quibusdam ipsam maiores.</p>
                         <div class="sets"></div>
                     </div>
                 </div>
             </div>
             <div class="anns">
-                <h1>Announcements</h1>
+                <h1 class="proHeads">Announcements</h1>
+                <div class="anns-container">
+                    <div class="anncard">
+                        <h3 class="annhead">Announcement1</h3>
+                        <p class="anncontent">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="anncard">
+                        <h3 class="annhead">Announcement2</h3>
+                        <p class="anncontent">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="anncard">
+                        <h3 class="annhead">Announcement</h3>
+                        <p class="anncontent">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
             </div>
             <div class="trending">
-                <h1>Trending</h1>
+                <h1 class="proHeads">Trending</h1>
+                <div class="trends">
+                    <div class="profile trend">
+                        <img src="./media/deadpool.jpg" alt="" id="smallpic">
+                        <div class="tags">
+                            <p class="tag">@morgan</p>
+                            <p class="name">Morgan Oakley</p>
+                        </div>
+                    </div>
+                    <div class="profile trend">
+                        <img src="./media/deadpool.jpg" alt="" id="smallpic">
+                        <div class="tags">
+                            <p class="tag">@morgan</p>
+                            <p class="name">Morgan Oakley</p>
+                        </div>
+                    </div>
+                    <div class="profile trend">
+                        <img src="./media/deadpool.jpg" alt="" id="smallpic">
+                        <div class="tags">
+                            <p class="tag">@morgan</p>
+                            <p class="name">Morgan Oakley</p>
+                        </div>
+                    </div>
+                    <div class="profile trend">
+                        <img src="./media/deadpool.jpg" alt="" id="smallpic">
+                        <div class="tags">
+                            <p class="tag">@morgan</p>
+                            <p class="name">Morgan Oakley</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

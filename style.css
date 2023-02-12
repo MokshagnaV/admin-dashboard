@@ -50,53 +50,56 @@ table {
 
 
 /* Actual CSS*/
+:root{
+    --gray-bg: #e2e8f0;
+    --white-bg: #ffffff;
+    --blue-clr: #0ea5e9;
+    --box-accent: #404040;
+}
 .container{
-    background-color: #e2e8f0;
+    background-color: var(--gray-bg);
     min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 3fr;
 }
 
 .sidebar{
-    background-color: #0ea5e9;
+    background-color: var(--blue-clr);
     grid-column: 1/2;
-    grid-row: 1/-1;
-    color: #ffffff;
+    grid-row: 1/3;
+    color: var(--white-bg);
+    z-index: 2;
 }
 .header{
-    background-color: #ffffff;
+    background-color: var(--white-bg);
     grid-column: 2/ 3;
+    padding: 1rem;
+    box-shadow: 0 2px 10px rgb(114, 113, 113);
 }
 #head1{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem .5rem;
 }
 #head2{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem 0.5rem;
 }
 .profile{
     display: flex;
-}
-
-.profile p, .profile h3{
-    margin: 0;
 }
 .main-content{
     grid-column: 2/3;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 20rem 20rem;
 }
 .projects{
     grid-row: 1/-1;
-    padding: 2rem;
-}
-ul li{
-    list-style: none;
+    padding: 1rem;
 }
 
 .icon{
@@ -105,9 +108,150 @@ ul li{
 
 .projects-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 40%));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(48%, 1fr));
+    gap: 1.5rem;
 }
 .project{
     border: 1px solid black;
+}
+
+
+#dashHead{
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+#options1, 
+#options2{
+    margin: 1rem;
+    padding: .5rem 0;
+}
+
+.option{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: .5rem;
+}
+
+#searchdiv{
+    /* align-items: center; */
+    display: flex;
+    width: 50%;
+    gap: 1rem;
+}
+#search{
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background-color: var(--gray-bg);
+    flex: 1;
+}
+
+.profile{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+#smallpic{
+    width: 2rem;
+    border-radius: 100%;
+}
+#smallname{
+    font-size: 1rem;
+    font-weight: bold;
+}
+#bigpic{
+    width: 3.5rem;
+    border-radius: 100%;
+}
+#vsmall{
+    font-size: .8rem;
+    font-weight: 500;
+}
+#bigname{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.actions{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.action{
+    border-radius: 50px;
+    border: none;
+    background-color: var(--blue-clr);
+    color: var(--white-bg);
+    /* font-size: 1rem; */
+    font-weight: 600;
+    padding: .5rem 1rem;
+}
+
+.proHeads{
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: .5rem 0;
+}
+
+.project{
+    padding: 2rem 1rem;
+    background-color: var(--white-bg);
+    border-radius: .5rem;
+    border: none;
+    border-left: .5rem solid var(--box-accent);
+    box-shadow: 1px 2px 3px var(--box-accent);
+}
+
+.cardHead{
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: .35rem 0;
+}
+
+.anns{
+    padding: 1rem;
+}
+
+.anns-container, .trends{
+    background-color: var(--white-bg);
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.anncard{
+    padding: 1rem .5rem;
+    border-bottom: .5px solid #c0c0c0;
+}
+
+.anncard:last-child{
+    border-bottom: none;
+}
+
+.annhead{
+    font-size: .9rem;
+    font-weight: bold;
+    padding: .3rem 0;
+}
+
+.anncontent{
+    font-size: .7rem;
+    color: #494949;
+}
+
+.trending{
+    padding: 1rem;
+}
+
+.tag{
+    font-size: .9rem;
+    padding: .2rem 0;
+}
+.tags > .name{
+    font-size: .9rem;
+    color: #494949;
+}
+.trend{
+    padding: .5rem;
 }
